@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./index.css" />
+
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="left">
+      <span>sneakers</span>
+      <span>Collections</span>
+      <span>Men</span>
+      <span>Women</span>
+      <span>About</span>
+      <span>Contact</span>
+    </div>
+    <div class="right">
+      <div class="cart">
+        <img class="cartBtn" src="./images/icon-cart.svg" alt="cart" />
+        <div class="count">0</div>
+        <div class="allCart">
+          <span>Cart</span>
+          <div class="line"></div>
+          <div class="list">
+            <div class="item">
+              <img src="./images/image-product-1.jpg" />
+              <div class="text">
+                <span class="title"></span>
+                <span class="total"></span>
+              </div>
+              <img class="delete" src="./images/icon-delete.svg" />
+            </div>
+          </div>
+          <button id="checkout">
+            Checkout
+          </button>
+          <span class="empty">Your cart is empty.
+          </span>
+        </div>
+      </div>
+      <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+    </div>
+  </nav>
+  <div class="line"></div>
+  <div class="main">
+    <div class="left">
+      <div class="top">
+        <div id="previous">
+          <img src="./images/icon-previous.svg" />
+        </div>
+        <img id="preview" src="./images/image-product-1.jpg" alt="" />
+        <div id="next">
+          <img src="./images/icon-next.svg" />
+        </div>
+      </div>
+      <div class="bottom">
+        <img id="one" src="./images/image-product-1-thumbnail.jpg" alt="" />
+        <img id="two" src="./images/image-product-2-thumbnail.jpg" alt="" />
+        <img id="three" src="./images/image-product-3-thumbnail.jpg" alt="" />
+        <img id="four" src="./images/image-product-4-thumbnail.jpg" alt="" />
+      </div>
+    </div>
+    <div class="right">
+      <span>sneaker company</span>
+      <span>Fall Limited Edition Sneakers</span>
+      <span>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+        they'll withstand everything the weather can offer.</span>
+      <div class="detail">
+        <span>$125.00</span>
+        <span>50%</span>
+        <span>$250.00</span>
+      </div>
+      <div class="addDetails">
+        <div class="imgCart">
+          <img class="Cart" src="./images/icon-minus.svg" />
+          <span id="cartNumber">0</span>
+          <img class="Cart" src="./images/icon-plus.svg" />
+        </div>
+        <button id="addToCart">
+          <img src="./images/icon-cart.svg" />
+          <span>Add to cart</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
