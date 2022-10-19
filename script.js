@@ -19,6 +19,10 @@ const displayCart = document.querySelector('.allCart')
 const cartBtn = document.querySelector('.cartBtn')
 const count = document.querySelector('.count')
 const deleteBtn = document.querySelector('.delete')
+const close = document.querySelector('.close')
+const mobileMenu = document.querySelector('.mobileMenu')
+const menuOpen = document.querySelector('.menuOpen')
+
 let cartTotal = 0;
 
 
@@ -190,4 +194,12 @@ deleteBtn.addEventListener('click', () => {
     empty.style.display = 'block'
     list.style.display = 'none';
     checkoutBtn.style.display = 'none';
+})
+
+close.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+})
+
+menuOpen.addEventListener('click', () => {
+    mobileMenu.style.display = 'flex';
 })
